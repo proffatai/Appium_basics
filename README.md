@@ -63,6 +63,8 @@ Now, locate and click on the `Refresh Source & Screenshot` button on the inspect
 ## Typing on a field
 .type("message") in cypress  but in appium .sendKeys("message")
 
+## Reading labels of elements in Appium
+use the .getText() to get the text of a selected element
 
 ## Setting defaultCommandTimeout i.e time taken to wait for an element to be visible
 driver.manage().timeouts().implicityWait(Duration.ofSeconds(10)) // setting to 10secs
