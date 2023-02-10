@@ -23,7 +23,6 @@ Ensure that the remote host and remote port are 127.0.0.1 and 4723 by default
 
 Click the start session button
 
-
 ### How to start appium server programmatically using AppiumServiceBuilder
 This is nice as we dont need to manually start appium from command line any longer
 
@@ -69,3 +68,17 @@ use the .getText() to get the text of a selected element
 ## Setting defaultCommandTimeout i.e time taken to wait for an element to be visible
 driver.manage().timeouts().implicityWait(Duration.ofSeconds(10)) // setting to 10secs
 
+
+## Appium Gestures
+Visit for `https://github.com/appium/appium-uiautomator2-driver/blob/master/docs/android-mobile-gestures.md `more info
+
+### For long press
+say `//android.widget.TextView[@text='People Names'` is the xpath of the element we want to click on:  We are storing that element in a WebElement variable as shown below and we will pass this variable to the copied code from appium gestures
+WebElement element= driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='People Names']"));
+	
+	Copy this script from appium github gestures and import the necessary modules
+		((JavascriptExecutor) driver).executeScript("mobile: longClickGesture", ImmutableMap.of(
+			    "elementId", ((RemoteWebElement) element).getId(),
+			    "duration",2000 // this implies we are holding down for 2secs
+			));
+I added `"duration",2000` to increase the longPress time.

@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Last.Finale">
+      <class name="Last.LongPress">
         <methods>
           <include name="configureAppium"/>
-          <include name="setWifiName"/>
+          <include name="longPress"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Last.Finale -->
+      </class> <!-- Last.LongPress -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
