@@ -2,13 +2,9 @@ package Last;
 
 import java.net.MalformedURLException;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
 
@@ -32,6 +28,6 @@ public class LongPress extends BaseTest {
 		Assert.assertTrue(driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id='android:id/title']")).isDisplayed()); // I can use this assertion instrad of comparing texts. I am checking if an element is displayed/visible
 		
 		driver.findElement(AppiumBy.id("android:id/content")).click();
-		Thread.sleep(2000); // this is ensure that the app does not close immediately after the long press is carried out, this will allow us see the menus under the longpress
+		Thread.sleep(2000); // this is to ensure that the app does not close immediately after the long press is carried out, this will allow us see the menus under the longpress
 	}
 }

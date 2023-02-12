@@ -49,6 +49,14 @@ public class BaseTest { //this is a class
 			    "duration",2000
 			));
 	}
+	public void swipeAction(WebElement element, String direction) {
+		
+		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
+			    "elementId", ((RemoteWebElement) element).getId(), // where element is a WebElement variable storing the position of the first image
+			    "direction", direction, // this specifies the swipe direction
+			    "percent", 0.75 // this specifies the percentage of our thumb that we want to use to swipe
+			));
+	}
 	
 	@AfterClass
 	public void tearDown() {

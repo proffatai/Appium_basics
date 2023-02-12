@@ -1,17 +1,12 @@
 package Last;
 
 
-import java.net.URL;
-
 import java.net.MalformedURLException;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.options.UiAutomator2Options;
 
 public class Finale extends BaseTest { // inherits all methods and attributes of the base class
 

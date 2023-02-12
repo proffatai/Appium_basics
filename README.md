@@ -82,3 +82,23 @@ WebElement element= driver.findElement(AppiumBy.xpath("//android.widget.TextView
 			    "duration",2000 // this implies we are holding down for 2secs
 			));
 I added `"duration",2000` to increase the longPress time.
+
+## Scroll operation in Appium
+There are two ways to archive this,
+
+
+First is to use androidUIAutomator: this requires us to use an object of the class UiScrollable, which takes as an argument an object of UISelector. Then there is a method in UiScrollable (scrollIntoView(string arg))that we can access from the UiScrollable object. arg is the name/label/text that we wanna scrol to
+ We need to pass the text which we want to scroll to as the arguments. NB: /(backslash) are used before   an example is shown below
+driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text (\"Web View\"))"));
+
+
+### For swipeGestures
+// Java
+((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
+    "elementId", ((RemoteWebElement) element).getId() // where element is a WebElement variable storing the position of the first image
+    "direction", "left", // this specifies the swipe direction
+    "percent", 0.75 // this specifies the percentage of our thumb that we want to use to swipe
+));
+
+
+
