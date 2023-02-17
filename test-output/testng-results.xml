@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-12T05:24:55 WAT" name="Default suite" finished-at="2023-02-12T05:25:15 WAT" duration-ms="19814">
+  <suite started-at="2023-02-17T20:13:16 WAT" name="Default suite" finished-at="2023-02-17T20:13:38 WAT" duration-ms="22163">
     <groups>
     </groups>
-    <test started-at="2023-02-12T05:24:55 WAT" name="Default test" finished-at="2023-02-12T05:25:15 WAT" duration-ms="19814">
-      <class name="Last.SwipeGesture">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:Last.SwipeGesture@58d75e99]" started-at="2023-02-12T05:24:55 WAT" name="configureAppium" finished-at="2023-02-12T05:25:05 WAT" duration-ms="9135" status="PASS">
+    <test started-at="2023-02-17T20:13:16 WAT" name="Default test" finished-at="2023-02-17T20:13:38 WAT" duration-ms="22163">
+      <class name="Last.AppActivity">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:Last.AppActivity@74751b3]" started-at="2023-02-17T20:13:16 WAT" name="configureAppium" finished-at="2023-02-17T20:13:26 WAT" duration-ms="10414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="swipeGesture()[pri:0, instance:Last.SwipeGesture@58d75e99]" started-at="2023-02-12T05:25:05 WAT" name="swipeGesture" finished-at="2023-02-12T05:25:15 WAT" duration-ms="9973" status="PASS">
+        <test-method signature="MultipleChoiceList()[pri:0, instance:Last.AppActivity@74751b3]" started-at="2023-02-17T20:13:26 WAT" name="MultipleChoiceList" finished-at="2023-02-17T20:13:37 WAT" duration-ms="10528" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- swipeGesture -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Last.SwipeGesture@58d75e99]" started-at="2023-02-12T05:25:15 WAT" name="tearDown" finished-at="2023-02-12T05:25:15 WAT" duration-ms="665" status="PASS">
+        </test-method> <!-- MultipleChoiceList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Last.AppActivity@74751b3]" started-at="2023-02-17T20:13:37 WAT" name="tearDown" finished-at="2023-02-17T20:13:38 WAT" duration-ms="1164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Last.SwipeGesture -->
+      </class> <!-- Last.AppActivity -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

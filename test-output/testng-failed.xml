@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Last.SwipeGesture">
+      <class name="Last.AppActivity">
         <methods>
           <include name="configureAppium"/>
           <include name="tearDown"/>
-          <include name="swipeGesture"/>
+          <include name="MultipleChoiceList"/>
         </methods>
-      </class> <!-- Last.SwipeGesture -->
+      </class> <!-- Last.AppActivity -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

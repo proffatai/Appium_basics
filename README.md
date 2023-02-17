@@ -100,5 +100,47 @@ driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector(
     "percent", 0.75 // this specifies the percentage of our thumb that we want to use to swipe
 ));
 
+### Drag and Drop Gesture
+// Java
+((JavascriptExecutor) driver).executeScript("mobile: dragGesture", ImmutableMap.of(
+    "elementId", ((RemoteWebElement) element).getId(), element is the reference to the element that we want to drag
+    "endX", 100,// get the coordinates of the drop location from appium inspector
+    "endY", 100
+));
+
+To get the coordinates endX and endY from appium inspector, indicator to `tap by coordinates`
+
+## Rotation of phone's screen using Appium
+
+There is a method called called rotate in appium where we have to pass a DeviceRotation obj to
+e.g: DeviceRotation landscape=new DeviceRotation(0,0,90);// this will rotate the screen by 90
+driver.rotate(landscape);
+
+## Copying text to clipboard
+firstly, driver.setClipboardText("Hello world"); here, we are copying `hello world` to clipboard. We can use anywhhere else by pasting it
+using driver.findElement(AppiumBy.id('hello')).sendKeys(driver.getClipboardText()); instead of hardcoding the value, we pasted whatever we have on the clipboard.
+
+We can chose not to hard code hello world as the text we wanna copy if there is a specific text we want to copy during execution
+We would just use driver.setClipboardText(driver.findElement(AppiumBy.id("android:id/alertTitle")).getText()). Here the argument is the title of the page
+
+## KeyStrokeEvent functionalities in Appium
+Assuming we wanna enter / press some keys from our screen such as hitting the home button, enter button on the keyboard or back button, this can be archieved as followed
+
+driver.pressKey(new KeyEvent(AndroidKey.HOME)); // this will hit the home button of the android phone
+
+
+## App Package and App  Activity
+This will allow us to directly load the page we want to perform test on instead of step by step navigation to that point
+
+App package is the name of the package in which several classes are created
+App activity is simply talking about the actions / pages that exists on the app. So each page of an app is considered as an activity
+To open a specific activity level or page: Firstly, navigate to the page you want to find its activity level (page you want to load)
+secondly, ensure emulator is running and run this command on terminal `adb shell dumpsys window | grep -E 'mCurrentFocus'`
+
+The output of the above command is your packageName and activityName with / separating the two
+Create an object of Activity and pass these 2 args e.g Activity act= new Activity ('packageName', 'activityName')
+Finally, driver.startActivity(act);
+
+
 
 
