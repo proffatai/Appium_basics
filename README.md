@@ -3,20 +3,32 @@
 Using `UiAutomator2Options` and Using `DesiredCapabilities`
 <br>
 Method 1
+<br>
 //	UiAutomator2Options options = new UiAutomator2Options();
+<br>
 //	options.setApp("//Users//proffatai//Documents//Appium projects//Dua_Azkar_Appium_Automation//src//resources//DA.apk");
+<br>
 //	options.setDeviceName("Pixel4"); 
 <br>
 Method 2
+<br>
 //Alternative way of starting the app by setting all the app capabilites
+<br>
 	DesiredCapabilities capabilities = new DesiredCapabilities();
-	capabilities.setCapability("platformName", "Android"); 
+ <br>
+	capabilities.setCapability("platformName", "Android");
+ <br>
         capabilities.setCapability("deviceName", "Pixel4"); // this is the name of the emulator
+	<br>
         capabilities.setCapability("appPackage", "com.ls.arabic");
+	<br>
         capabilities.setCapability("appActivity", "com.ls.arabic.HomeActivity");
+	<br>
         capabilities.setCapability("automationName", "UiAutomator2");
         capabilities.setCapability("noReset", true);
+	<br>
         capabilities.setCapability("appWaitDuration", 10000); // 10 seconds
+	<br>
 	capabilities.setCapability("app", "//Users//proffatai//Documents//Appium projects//Dua_Azkar_Appium_Automation//src//resources//DA.apk"); // this is the location of the apk
 
 ### How to get appActivity and appPackage
