@@ -1,11 +1,12 @@
 ### 2 ways to start an app
+<br>
 Using `UiAutomator2Options` and Using `DesiredCapabilities`
-
+<br>
 Method 1
 //	UiAutomator2Options options = new UiAutomator2Options();
 //	options.setApp("//Users//proffatai//Documents//Appium projects//Dua_Azkar_Appium_Automation//src//resources//DA.apk");
 //	options.setDeviceName("Pixel4"); 
-
+<br>
 Method 2
 //Alternative way of starting the app by setting all the app capabilites
 	DesiredCapabilities capabilities = new DesiredCapabilities();
