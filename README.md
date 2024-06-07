@@ -35,7 +35,8 @@ Method 2
 Download the app: app info from playstore, open the downloaded app and from it, select the app that you want to get its properties (e.g boomplay)  and use it to extract the appActivity and appPackage name of the specific app.
 <br>
 The appPackage here is `com.afmobi.boomplayer` and the appActivity is `com.tecno.boomplayer.guide.ControllerActivity`
-<img width="278" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/4fa43924-20cc-4c5d-b16b-97b8d550806c">
+<img width="268" alt="Screenshot 2024-06-07 at 10 18 52 PM" src="https://github.com/proffatai/Appium_basics/assets/32229780/9e3e8649-6e94-4cff-b9f8-4e2aaabca33d">
+
 <br>
 To get the appActivity, click on Activities from the homepage of the selected app and the first value that has the appName and ends in Activity `com.facebook.CustomTabActivity` which represents the first activity/screen.
 <img width="298" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/26d41618-ab46-4202-bb08-de47ee116c9e">
