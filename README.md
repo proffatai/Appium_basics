@@ -1,3 +1,26 @@
+### 2 ways to start an app
+Using `UiAutomator2Options` and Using `DesiredCapabilities`
+
+Method 1
+//	UiAutomator2Options options = new UiAutomator2Options();
+//	options.setApp("//Users//proffatai//Documents//Appium projects//Dua_Azkar_Appium_Automation//src//resources//DA.apk");
+//	options.setDeviceName("Pixel4"); 
+
+Method 2
+//Alternative way of starting the app by setting all the app capabilites
+	DesiredCapabilities capabilities = new DesiredCapabilities();
+	capabilities.setCapability("platformName", "Android"); 
+        capabilities.setCapability("deviceName", "Pixel4"); // this is the name of the emulator
+        capabilities.setCapability("appPackage", "com.ls.arabic");
+        capabilities.setCapability("appActivity", "com.ls.arabic.HomeActivity");
+        capabilities.setCapability("automationName", "UiAutomator2");
+        capabilities.setCapability("noReset", true);
+        capabilities.setCapability("appWaitDuration", 10000); // 10 seconds
+	capabilities.setCapability("app", "//Users//proffatai//Documents//Appium projects//Dua_Azkar_Appium_Automation//src//resources//DA.apk"); // this is the location of the apk
+
+### How to get appActivity and appPackage
+Download the app: app info from playstore and use it to extract the appActivity and appPackage name of the specific app
+
 ### Different types of selectors supported by Appium
 XPath, id, className, accessibilityId and androidUiAutomator
 
