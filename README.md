@@ -38,7 +38,7 @@ The appPackage here is `com.afmobi.boomplayer` and the appActivity is `com.tecno
 <img width="268" alt="Screenshot 2024-06-07 at 10 18 52 PM" src="https://github.com/proffatai/Appium_basics/assets/32229780/9e3e8649-6e94-4cff-b9f8-4e2aaabca33d">
 
 <br>
-To get the appActivity, click on Activities from the homepage of the selected app and the first value that has the appName and ends in Activity `com.facebook.CustomTabActivity` which represents the first activity/screen.
+To get the appActivity, click on Activities from the homepage of the selected app and the first value that has the appName and ends in Activity `com.tecno.boomplayer.guide.ControllerActivity - Boomplay` which represents the first activity/screen.
 <img width="298" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/26d41618-ab46-4202-bb08-de47ee116c9e">
 <img width="314" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/6b3aed7f-4584-44d8-a637-284f71068f5d">
 
