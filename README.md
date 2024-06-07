@@ -65,15 +65,22 @@ findElement(AppiumBy.accessibilityId("Preference"))
 
 With appium inspector, we can get the selectors of each element of the app. The appium inspector is synonymous to inspect tools in chrome.
 parameters that we need to fill in the desired capabilities section includes:
-
+Method 1: Just pass these 4 attributes, app, deviceName, platformName and automationName
 app  -->  paste the url to the app, the same as what you passed to setApp()
 deviceName   -->enter the name of the emulator, same as what we passed to the setDeviceName()
 platformName  --> android //for android apps
 automationName  --> UIAutomator2
-
 Ensure that the remote host and remote port are 127.0.0.1 and 4723 by default
-
 Click the start session button
+<br>
+<img width="1509" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/5e542ca1-e1ae-4cd5-870d-9ad14a96b258">
+
+<br>
+Method 2
+Pass 6 attributes by including the appPackage and the appActivity as seen below
+<img width="1512" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/406746b6-7ba0-442b-b3bf-60472c7108ac">
+
+
 
 ### How to start appium server programmatically using AppiumServiceBuilder
 This is nice as we dont need to manually start appium from command line any longer
