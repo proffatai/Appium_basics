@@ -16,9 +16,9 @@ Method 2
 <br>
 	DesiredCapabilities capabilities = new DesiredCapabilities();
  <br>
-	capabilities.setCapability("platformName", "Android");
+	capabilities.setCapability("platformName", "Android"); // The platform you wanna run the app on whether Android or iOS
  <br>
-        capabilities.setCapability("deviceName", "Pixel4"); // this is the name of the emulator
+        capabilities.setCapability("deviceName", "Pixel4"); // this is the name of the emulator you want to run the app on
 	<br>
         capabilities.setCapability("appPackage", "com.ls.arabic");
 	<br>
@@ -32,7 +32,14 @@ Method 2
 	capabilities.setCapability("app", "//Users//proffatai//Documents//Appium projects//Dua_Azkar_Appium_Automation//src//resources//DA.apk"); // this is the location of the apk
 
 ### How to get appActivity and appPackage
-Download the app: app info from playstore and use it to extract the appActivity and appPackage name of the specific app
+Download the app: app info from playstore, open the downloaded app and from it, select the app that you want to get its properties (e.g boomplay)  and use it to extract the appActivity and appPackage name of the specific app.
+<br>
+The appPackage here is `com.afmobi.boomplayer` and the appActivity is `com.tecno.boomplayer.guide.ControllerActivity`
+<img width="278" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/4fa43924-20cc-4c5d-b16b-97b8d550806c">
+<br>
+To get the appActivity, click on Activities from the homepage of the selected app and the first value that has the appName and ends in Activity `com.facebook.CustomTabActivity` which represents the first activity/screen.
+<img width="298" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/26d41618-ab46-4202-bb08-de47ee116c9e">
+<img width="314" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/6b3aed7f-4584-44d8-a637-284f71068f5d">
 
 ### Different types of selectors supported by Appium
 XPath, id, className, accessibilityId and androidUiAutomator
