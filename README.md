@@ -32,15 +32,23 @@ Method 2
 	capabilities.setCapability("app", "//Users//proffatai//Documents//Appium projects//Dua_Azkar_Appium_Automation//src//resources//DA.apk"); // this is the location of the apk
 
 ### How to get appActivity and appPackage
-Download the app: app info from playstore, open the downloaded app and from it, select the app that you want to get its properties (e.g boomplay)  and use it to extract the appActivity and appPackage name of the specific app.
-<br>
-The appPackage here is `com.afmobi.boomplayer` and the appActivity is `com.tecno.boomplayer.guide.ControllerActivity`
-<img width="268" alt="Screenshot 2024-06-07 at 10 18 52 PM" src="https://github.com/proffatai/Appium_basics/assets/32229780/9e3e8649-6e94-4cff-b9f8-4e2aaabca33d">
+Download the app: `Package Name Viewer` or `App info ` as seen below from playstore, open the downloaded app and from it, select the app that you want to get its properties (e.g boomplay)  and use it to extract the appActivity and appPackage name of the specific app.
+<img width="330" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/8d2dabce-17a6-48a7-82d3-752303aa222f">
+<img width="277" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/edfca527-f532-4ff1-861c-f7bcfac8a9a5">
 
 <br>
-To get the appActivity, click on Activities from the homepage of the selected app and the first value that has the appName and ends in Activity `com.tecno.boomplayer.guide.ControllerActivity - Boomplay` which represents the first activity/screen.
-<img width="298" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/26d41618-ab46-4202-bb08-de47ee116c9e">
-<img width="314" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/6b3aed7f-4584-44d8-a637-284f71068f5d">
+The appPackage here is `com.afmobi.boomplayer` and the appActivity is `com.tecno.boomplayer.guide.ControllerActivity`
+<img width="353" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/e32f3218-d443-4ce7-9ffd-fc8ca5f64700">
+<img width="308" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/0624f969-5615-4911-9707-eb4157659278">
+<img width="357" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/e1d6fd00-f6c7-43b2-9e3f-603e625af42c">
+
+<br>
+To get the appActivity, click on Activities from the homepage of the selected app and the first value that has the appName and ends in Activity `com.tecno.boomplayer.guide.ControllerActivity` which represents the first activity/screen.
+
+<img width="336" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/c6a3146d-5b55-4c32-ac24-e6ee4b276734">
+<img width="353" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/bd621288-9813-4b62-865c-3f863de3e883">
+<img width="307" alt="image" src="https://github.com/proffatai/Appium_basics/assets/32229780/86fffa18-2162-440e-a96c-57c0bdba9cd2">
+
 
 ### Different types of selectors supported by Appium
 XPath, id, className, accessibilityId and androidUiAutomator
